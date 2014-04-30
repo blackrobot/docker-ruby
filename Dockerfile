@@ -6,7 +6,6 @@ FROM damon/base
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -qqy \
     autoconf \
     bison \
-    build-essential \
     libssl-dev \
     libyaml-dev \
     libreadline6 \
