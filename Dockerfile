@@ -37,4 +37,5 @@ RUN /usr/local/rbenv/bin/rbenv global 2.1.0
 
 # Install bundler
 RUN echo "gem: --no-document" > /.gemrc
-RUN gem install bundler
+RUN gem install bundler && \
+    /usr/local/rbenv/bin/rbenv rehash
